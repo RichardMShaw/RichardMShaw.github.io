@@ -41,6 +41,7 @@
 
     .container {
       margin-top: 1rem;
+      height: 100vh;
     }
 
     .card {
@@ -102,7 +103,6 @@
     }
 
     footer {
-      position: fixed;
       left: 0;
       bottom: 0;
       width: 100%;
@@ -111,6 +111,7 @@
       color: white;
       padding: 2rem;
       border-top: 0.5rem solid green;
+      margin-top: 1rem;
     }
 
     @media only screen and (max-width: 767px) {
@@ -149,13 +150,12 @@
         margin-right: 0.75rem;
       }
 
-      .card {
-        width: 100%;
+      .container {
+        height: 100%;
       }
 
-      footer {
-        position: relative;
-        margin-top: 1rem;
+      .card {
+        width: 100%;
       }
     }
   </style>
@@ -183,60 +183,58 @@
       <div class="card-body">
         <h5 class="card-title">Portfolio</h5>
         <hr>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div id="rpg" class="project-img">
-                <div class="row-md-8"></div>
-                <div class="row-md-4">
-                  <p class="project-text">
-                    RPG Game
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div id="discord" class="project-img">
-                <div class="row-md-8"></div>
-                <div class="row-md-4">
-                  <p class="project-text">
-                    Discord Bot
-                  </p>
-                </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div id="rpg" class="project-img">
+              <div class="row-md-8"></div>
+              <div class="row-md-4">
+                <p class="project-text">
+                  RPG Game
+                </p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div id="websites" class="project-img">
-                <div class="row-md-8"></div>
-                <div class="row-md-4">
-                  <p class="project-text">
-                    Websites
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div id="cat" class="project-img">
-                <div class="row-md-8"></div>
-                <div class="row-md-4">
-                  <p class="project-text">
-                    Random Cat Generator
-                  </p>
-                </div>
+          <div class="col-md-6">
+            <div id="discord" class="project-img">
+              <div class="row-md-8"></div>
+              <div class="row-md-4">
+                <p class="project-text">
+                  Discord Bot
+                </p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div id="plugin" class="project-img">
-                <div class="row-md-8"></div>
-                <div class="row-md-4">
-                  <p class="project-text">
-                    Plugins
-                  </p>
-                </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div id="websites" class="project-img">
+              <div class="row-md-8"></div>
+              <div class="row-md-4">
+                <p class="project-text">
+                  Websites
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="cat" class="project-img">
+              <div class="row-md-8"></div>
+              <div class="row-md-4">
+                <p class="project-text">
+                  Random Cat Generator
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div id="plugin" class="project-img">
+              <div class="row-md-8"></div>
+              <div class="row-md-4">
+                <p class="project-text">
+                  Plugins
+                </p>
               </div>
             </div>
           </div>
