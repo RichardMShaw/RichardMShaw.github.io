@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles((theme) => ({
   bg: {
@@ -12,8 +11,14 @@ const useStyles = makeStyles((theme) => ({
   },
   footer: {
     flexGrow: 1,
-    textAlign: 'center',
     textShadow: '2px 2px #002479',
+  },
+  p: {
+    margin: 0,
+    textAlign: 'center',
+    [theme.breakpoints.up('sm')]: {
+      textAlign: 'left',
+    },
   },
 }))
 
@@ -23,13 +28,11 @@ const Footer = () => {
   return (
     <AppBar position="static">
       <Toolbar className={classes.bg}>
-        <Grid container>
-          <Grid item xs={3}>
-            <Typography className={classes.footer} variant="h6" noWrap>
-              Contact:Yay
-            </Typography>
-          </Grid>
-        </Grid>
+        <Typography className={classes.footer} variant="h6">
+          <p className={classes.p}>Contact Me:</p>
+          <p className={classes.p}>Email: richardmorganshaw@gmail.com</p>
+          <p className={classes.p}>Phone Number: (949)-763-1376</p>
+        </Typography>
       </Toolbar>
     </AppBar>
   )

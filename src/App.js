@@ -3,12 +3,9 @@ import Navbar from './components/Navbar'
 import Project from './components/Project'
 import IntroParagraph from './components/IntroParagraph'
 import Footer from './components/Footer'
-import Container from '@material-ui/core/Container'
+import Bg from './components/Bg'
 
 const useStyles = makeStyles({
-  root: {
-    backgroundColor: '#2424244f',
-  },
   bg: {
     backgroundImage: 'url(https://images7.alphacoders.com/415/415738.jpg)',
     backgroundPosition: 'center',
@@ -27,10 +24,9 @@ const useStyles = makeStyles({
 })
 
 const App = () => {
-  const classes = useStyles()
   return (
-    <div className={classes.root}>
-      <div className={classes.bg}></div>
+    <div>
+      <Bg />
       <Navbar />
       <IntroParagraph />
       <h2>Projects</h2>
