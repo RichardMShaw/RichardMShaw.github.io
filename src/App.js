@@ -2,11 +2,12 @@ import { makeStyles } from '@material-ui/core/styles'
 import Navbar from './components/Navbar'
 import Project from './components/Project'
 import IntroParagraph from './components/IntroParagraph'
+import Footer from './components/Footer'
 import Container from '@material-ui/core/Container'
 
 const useStyles = makeStyles({
-  root:{
-    backgroundColor: "#2424244f",
+  root: {
+    backgroundColor: '#2424244f',
   },
   bg: {
     backgroundImage: 'url(https://images7.alphacoders.com/415/415738.jpg)',
@@ -51,6 +52,7 @@ const App = () => {
         deploy="https://richardmshaw.github.io/Breath-Easy/"
         github="https://github.com/RichardMShaw/Breath-Easy"
       />
+      <Footer />
     </div>
   )
 }
