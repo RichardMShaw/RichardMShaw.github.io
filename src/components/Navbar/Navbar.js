@@ -7,24 +7,18 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
+  bg: {
+    background: 'linear-gradient(rgba(250,0,0,0.5),transparent)',
+    backgroundColor: 'orange',
   },
-    title: {
+  title: {
     flexGrow: 1,
-    display: 'none',
+    textAlign: 'center',
+    textShadow: '2px 2px #ff0000',
     [theme.breakpoints.up('sm')]: {
-      display: 'block',
+      textAlign: 'left',
     },
   },
-  titleMobile: {
-    flexGrow: 1,
-    display: 'block',
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
-    textAlign:'center'
-  }
 }))
 
 const Navbar = ({ toggleDrawer }) => {
@@ -33,11 +27,8 @@ const Navbar = ({ toggleDrawer }) => {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar className={classes.bg}>
           <Typography className={classes.title} variant="h6" noWrap>
-            Richard Morgan Shaw
-          </Typography>
-          <Typography className={classes.titleMobile} variant="h6" noWrap>
             Richard Morgan Shaw
           </Typography>
         </Toolbar>
