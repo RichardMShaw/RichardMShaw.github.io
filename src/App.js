@@ -1,35 +1,18 @@
-import { makeStyles } from '@material-ui/core/styles'
 import Navbar from './components/Navbar'
 import Project from './components/Project'
 import IntroParagraph from './components/IntroParagraph'
 import Footer from './components/Footer'
 import Bg from './components/Bg'
-
-const useStyles = makeStyles({
-  bg: {
-    backgroundImage: 'url(https://images7.alphacoders.com/415/415738.jpg)',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    position: 'fixed',
-    overflow: 'hidden',
-    display: 'block',
-    top: 0,
-    left: 0,
-    boxSizing: 'border-box',
-    zIndex: -1,
-    width: '100%',
-    height: '100%',
-  },
-})
+import Divider from './components/Divider'
 
 const App = () => {
   return (
     <div>
       <Bg />
       <Navbar />
+      <Divider text="About Me" />
       <IntroParagraph />
-      <h2>Projects</h2>
+      <Divider text="Projects" />
       <Project
         image="https://raw.githubusercontent.com/ron-est/Fitness-Edge/main/public/assets/img/workout.jpg"
         alt="weightRack.jpg"
