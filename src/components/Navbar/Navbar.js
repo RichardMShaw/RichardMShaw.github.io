@@ -59,6 +59,15 @@ const Navbar = ({ toggleDrawer }) => {
           >
             Github
           </Button>
+          <Button
+            className={classes.button}
+            size="small"
+            color="primary"
+            href="https://www.linkedin.com/in/richard-morgan-shaw/"
+            target="_blank"
+          >
+            Linkedin
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

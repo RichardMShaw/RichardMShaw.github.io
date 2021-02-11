@@ -7,7 +7,6 @@ const useStyles = makeStyles((theme) => ({
   bg: {
     background: 'linear-gradient(rgba(0, 98, 98, 0.5),transparent)',
     backgroundColor: '#00712c',
-    width: '100%',
   },
   footer: {
     flexGrow: 1,
