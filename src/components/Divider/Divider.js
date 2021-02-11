@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     marginTop: '2rem',
     marginBottom: '2rem',
+    backgroundColor: 'rgb(0, 113, 90, 0.90)',
     [theme.breakpoints.up('sm')]: {
       maxWidth: '75%',
     },
@@ -17,6 +18,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     fontSize: '3rem',
     fontWeight: '700',
+    color: 'white',
+    textShadow: '1px 1px 0px black',
   },
 }))
 
