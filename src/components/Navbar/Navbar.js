@@ -45,7 +45,7 @@ const Navbar = ({ toggleDrawer }) => {
             className={classes.button}
             size="small"
             color="primary"
-            href="https://drive.google.com/file/d/1vTpKn-WlTTuLsVjV0Itq_NTzNT6rsZdT/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ed-GUTob3vZ0aoi6ky0ueaWf5zv8pT1_/view?usp=sharing"
             target="_blank"
           >
             Resume
